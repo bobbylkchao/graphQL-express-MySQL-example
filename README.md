@@ -13,6 +13,23 @@
 3. Modify config/db.config.js file, change the db password and db name.
 3. Open repo, and execute `npm i`
 4. Ok, done, run it `node index.js`
+5. Visit `http://localhost:4000` in your browser
+6. Try to run below query, get all posts records and its user infos.
+
+```
+{
+  posts {
+    id
+    title
+    content
+    user {
+      id
+      email
+      name
+    }
+  }
+}
+```
 
 ## Folder description
 
